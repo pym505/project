@@ -1,1 +1,1 @@
-# persnal
+# personal
