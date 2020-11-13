@@ -5,3 +5,4 @@ const inputdata = fs.readFileSync('/dev/stdin').toString().split(' ');
 //inputdata[1] = B
 const [A, B] = inputdata; // 인풋데이터 배열을 a,b변수에 담는다.
 console.log(A + B);
+//ok
