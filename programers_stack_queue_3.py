@@ -24,18 +24,27 @@ truck_weights의 길이는 1 이상 10,000 이하입니다.
 모든 트럭의 무게는 1 이상 weight 이하입니다.
 입출력 예
 bridge_length	weight	truck_weights	return
-2	10	[7,4,5,6]	8
-100	100	[10]	101
-100	100	[10,10,10,10,10,10,10,10,10,10]	110
+2	            10	    [7,4,5,6]	    8
+100         	100	    [10]    	    101
+100	            100	    [10,10,10,10,10,10,10,10,10,10]	110
 """
 #일단 다리는 건너는중인 리스트를 만들고 대기중인리스트를만들자. 그리고 완료는뭐...있음좋고 
 
 def func(bl, w, tw):
     #bl은 다리길이 , w는 다리무게, tw 트럭무게
     re= 0
+    ing_list=[]
+    comp_list=[]
+    time=0
+
     for i in range(0,len(tw)):
         target = tw.pop(0)
-        print(target)
+        ing_list.append(target)
+        time=time+1
+        #for j in range(0,)
+        #다리에 넣는다 
+        
+        print(comp_list,ing_list,tw,"-",time)
 
 
     print(re)
@@ -46,17 +55,18 @@ w=10
 tw=[7,4,5,6]
 # 8 
 func(bl,w,tw)
+exit
 
 bl=100
 w=100
 tw=[10]
 # 101
-func(bl,w,tw)
+#func(bl,w,tw)
 
 bl=100
 w=100
 tw=[10,10,10,10,10,10,10,10,10,10]
 # 110
-func(bl,w,tw)
+#func(bl,w,tw)
 
 
